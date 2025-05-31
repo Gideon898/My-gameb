@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bible Trivia Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background video -->
+  <video class="bg" autoplay loop muted>
+    <source src="assets/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Background music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Sound effects -->
+  <audio id="correctSound">
+    <source src="assets/correct.mp3" type="audio/mp3">
+  </audio>
+  <audio id="wrongSound">
+    <source src="assets/wrong.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Game UI -->
+  <div class="container">
+    <div class="box">
+      <h1 id="question">Loading question...</h1>
+      <div class="options" id="options"></div>
+      <div id="result"></div>
+      <div id="score">Score: 0</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
